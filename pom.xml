@@ -75,7 +75,7 @@
         <hibernate.version>3.6.10.Final</hibernate.version>
         <jaxb.api.version>2.3.3</jaxb.api.version>
         <jaxb.impl.version>2.3.3</jaxb.impl.version>
-        <activation.api.version>1.2.2</activation.api.version>
+        <activation.api.version>2.0.1</activation.api.version>
         <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
     </properties>
 
