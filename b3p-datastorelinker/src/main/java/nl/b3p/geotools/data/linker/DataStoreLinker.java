@@ -502,6 +502,7 @@ public class DataStoreLinker implements Runnable {
         String errormsg = "DataStore could not be found using parameters";
 
         try {
+            params.put("charset", "UTF-8");
             dataStore = DataStoreFinder.getDataStore(params);
             if (dataStore == null && createNew) {
                 if (params.containsKey("url")) {
@@ -509,7 +510,6 @@ public class DataStoreLinker implements Runnable {
                     if (url.lastIndexOf(".shp") == (url.length() - ".shp".length())) {
                         ShapefileDataStoreFactory factory = new ShapefileDataStoreFactory();
 //                        FileDataStoreFactorySpi factory = new IndexedShapefileDataStoreFactory();
-
                         params.put("url", new File(url).toURI());
                         dataStore = factory.createNewDataStore(params);
                     } else {
