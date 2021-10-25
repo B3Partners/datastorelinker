@@ -147,7 +147,7 @@
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>b3p-commons-gis</artifactId>
-                <version>8.2</version>
+                <version>9.1</version>
             </dependency>
             <dependency>
                 <groupId>it.geosolutions</groupId>
