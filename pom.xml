@@ -135,7 +135,7 @@
             <dependency>
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
-                <version>42.3.3</version>
+                <version>42.3.5</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
