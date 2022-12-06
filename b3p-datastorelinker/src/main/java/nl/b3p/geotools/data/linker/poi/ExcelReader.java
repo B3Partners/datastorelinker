@@ -14,10 +14,10 @@ import java.util.Locale;
 import java.util.TimeZone;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
-import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.DateUtil;
 
 /**
  *
@@ -110,7 +110,7 @@ public class ExcelReader {
 
                                 case NUMERIC:
                                     HSSFCellStyle style = tempCell.getCellStyle();
-                                    if (HSSFDateUtil.isCellDateFormatted(tempCell)) {
+                                    if (DateUtil.isCellDateFormatted(tempCell)) {
                                         value = getDateValue(tempCell);
                                     } else {
                                         value = getNumericValue(tempCell).toString();
@@ -203,7 +203,7 @@ public class ExcelReader {
     protected String getDateValue(HSSFCell cell) {
 
         double numericValue = cell.getNumericCellValue();
-        Date date = HSSFDateUtil.getJavaDate(numericValue);
+        Date date = DateUtil.getJavaDate(numericValue);
         
         // Add the timezone offset again because it was subtracted 
         // automatically by Apache-POI (we need UTC)
