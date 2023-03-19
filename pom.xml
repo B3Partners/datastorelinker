@@ -71,7 +71,7 @@
         <geotools.version>28.2</geotools.version>
         <jts.version>1.19.0</jts.version>
         <b3p-gt-modules.version>8.4</b3p-gt-modules.version>
-        <slf4j.version>2.0.6</slf4j.version>
+        <slf4j.version>2.0.7</slf4j.version>
         <hibernate.version>3.6.10.Final</hibernate.version>
         <jaxb.api.version>2.3.3</jaxb.api.version>
         <jaxb.impl.version>2.3.3</jaxb.impl.version>
